@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    height: 100%;
+  }
+  
+  *::selection{
+background-color: #4671A2;
+color: white;
+    }

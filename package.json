@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "back": "cd back && npm start",
+    "front": "cd front && npm start",
+    "start": "concurrently --kill-others-on-fail --names \"back,front\" \"npm run back\" \"npm run front\"",
+    "postinstall": "cd front && npm install && cd .. && cd back && npm install"
+  },
+  "dependencies": {
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "concurrently": "^6.0.2",
+    "file-viewer": "^1.2.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "react-file-viewer": "^1.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/node": "^7.13.13"
+  }
+}
